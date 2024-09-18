@@ -1,13 +1,18 @@
 #include<iostream>
 using namespace std;
 
-int larprimfac(int x){
-    int a{0};
-    if (a%2!=0 && a%3!=0){
-        while (a<0){
-            
-        }
-    a=a+1
+int main(){
+    int x{0};
+    int y{1};
+    int suma{0};
+ while (y<=4000000){
+    if (y%2==0){
+        suma= suma+y;
+    
     }
-
-}
+    int a=x;
+    x=y;
+    y=a + y;
+ }
+ cout<< "La suma es  "<<suma;
+ }
